@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+/* font-family: 'Barlow', sans-serif; */
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Barlow',sans-serif;
+}
+
+/* Making of scoreBoard */
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%);
+}
+
+.scoreboard{
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 8em;
+    margin-top: 8vh;
+
+}
+
+.title{
+    margin-left: 1em;
+}
+
+.score{
+    border: 5px solid white;
+    background-color: white;
+    width: 6.5em;
+    height: 5em;
+    border-radius: 8px;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score h1{
+    color:#365468;
+    font-size: 2.5rem;
+}
+
+.score p{
+    font-size: 1rem;
+    color: #2a45c2;
+    font-weight: 800;
+    line-height: 1.1em;
+    letter-spacing: 2px;
+}
+
+
+
+/* Hands Section */
+
+
+.hands{
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.scissor{
+    margin-left: 30px;
+}
+
+.effect{
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.effect:hover{
+    transform: translate3d(0px,-8px,0px);
+}
+
+
+
+
+/*  */
+
+.contest{
+    /* max-width: 1000px; */
+    min-width: 800px;
+    margin-top: 5em;
+ 
+    /* border: 5px solid red; */
+    /* display: flex; */
+    display: none;
+}
+
+.contest > div{
+    flex: 1;
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contest h1{
+    color: white;
+    font-size: 1.25rem;
+    /* text-align: center; */
+    margin: 1em 0;    
+}
+
+.refree h1{
+    font-size: 45px;
+}
+
+.newgame{
+    
+    border-radius: 5px;
+    color: hsl(229, 25%, 31%);
+    padding: 15px 25px;
+    background-color: white;
+    transition: all 0.25s;
+    cursor: pointer;
+    
+    
+}
+
+.newgame:hover{
+    transform: translate3d(0px,-2px,0);
+    background-color: bisque;
+    
+}
